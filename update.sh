@@ -2,11 +2,11 @@
 
 CYAN="\033[1;36m"
 NC="\033[1;0m"
+CRDIR=$(pwd)
 
 update_nano()
 {
     MODULE_DIR="nano-ndk"
-    CRDIR=$(pwd)
     if [ ! -d $MODULE_DIR ]; then
         git submodule add https://github.com/ArieSR91/$MODULE_DIR
     else
@@ -21,7 +21,6 @@ update_nano()
 update_adb()
 {
     MODULE_DIR="adb-ndk"
-    CRDIR=$(pwd)
     if [ ! -d $MODULE_DIR ]; then
         git submodule add https://github.com/ArieSR91/$MODULE_DIR
     else
@@ -36,7 +35,6 @@ update_adb()
 update_busybox()
 {
     MODULE_DIR="busybox-ndk"
-    CRDIR=$(pwd)
     if [ ! -d $MODULE_DIR ]; then
         git submodule add https://github.com/ArieSR91/$MODULE_DIR
     else
