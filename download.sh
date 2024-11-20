@@ -15,7 +15,8 @@ if [ ! -d $MODIR ]; then
 fi
 mv $filename.zip $CRDIR
 cd $CRDIR
-wget $filename.zip
+wget https://github.com/ArieSR91/Magisk-Module/$filename.zip
+rm *.zip
 }
 
 files=$(ls -d1 */)
