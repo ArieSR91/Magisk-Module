@@ -8,9 +8,8 @@ cd $i
 shopt -s extglob
 filename=$(echo $i | sed 's:/*$::')
 zip -qr $filename *
-mv $filename.zip $CRDIR
-cd $CRDIR
-wget ./$filename.zip
+mv $filename.zip ..
+wget ../$filename.zip
 rm *.zip
 }
 
