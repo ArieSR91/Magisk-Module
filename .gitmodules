@@ -1,3 +1,6 @@
 [submodule "nano-ndk"]
 	path = nano-ndk
 	url = https://github.com/ArieSR91/nano-ndk
+[submodule "adb-ndk"]
+	path = adb-ndk
+	url = https://github.com/ArieSR91/adb-ndk
