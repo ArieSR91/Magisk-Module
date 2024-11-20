@@ -7,3 +7,6 @@
 [submodule "busybox-ndk"]
         path = busybox-ndk
 	url = https://github.com/ArieSR91/busybox-ndk
+[submodule "bash-ndk"]
+        path = bash-ndk
+        url = https://github.com/ArieSR91/bash-ndk
