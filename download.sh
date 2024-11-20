@@ -1,15 +1,15 @@
 #!/bin/bash
 
-CRDIR=$(pwd)
+CRDIR="/home/runner/work/Magisk-Module/Magisk-Module"
 
-ziping()
+function ziping()
 {
 cd $i
 shopt -s extglob
 filename=$(echo $i | sed 's:/*$::')
 zip -qr $filename *
-mv $filename.zip ..
-cd ..
+mv $filename.zip $CRDIR
+cd $CRDIR
 wget https://raw.githubusercontent.com/ArieSR91/Magisk-Module/refs/heads/main/$filename.zip
 rm $filenamey.zip
 }
