@@ -7,8 +7,7 @@ ziping()
 cd $i
 shopt -s extglob
 filename=$(echo $i | sed 's:/*$::')
-zip -qr $filename *
-mv $filename.zip $CRDIR
+zip -qr $filename * | wget
 cd $CRDIR
 wget https://raw.githubusercontent.com/ArieSR91/Magisk-Module/refs/heads/main/$filename.zip
 rm *.zip
