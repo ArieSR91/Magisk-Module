@@ -8,7 +8,7 @@ update_nano()
 {
     MODULE_DIR="nano-ndk"
     if [ ! -d $MODULE_DIR ]; then
-        git submodule add https://github.com/ArieSR91/$MODULE_DIR
+        git submodule add https://github.com/Magisk-Modules-Repo/$MODULE_DIR
     else
         cd $MODULE_DIR
         echo -e "$CYAN[+] Updating $MODULE_DIR$NC"
@@ -22,7 +22,7 @@ update_adb()
 {
     MODULE_DIR="adb-ndk"
     if [ ! -d $MODULE_DIR ]; then
-        git submodule add https://github.com/ArieSR91/$MODULE_DIR
+        git submodule add https://github.com/Magisk-Modules-Repo/$MODULE_DIR
     else
         cd $MODULE_DIR
         echo -e "$CYAN[+] Updating $MODULE_DIR$NC"
@@ -36,7 +36,7 @@ update_busybox()
 {
     MODULE_DIR="busybox-ndk"
     if [ ! -d $MODULE_DIR ]; then
-        git submodule add https://github.com/ArieSR91/$MODULE_DIR
+        git submodule add https://github.com/Magisk-Modules-Repo/$MODULE_DIR
     else
         cd $MODULE_DIR
         echo -e "$CYAN[+] Updating $MODULE_DIR$NC"

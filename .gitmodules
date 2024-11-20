@@ -1,12 +1,12 @@
 [submodule "nano-ndk"]
 	path = nano-ndk
-	url = https://github.com/ArieSR91/nano-ndk
+	url = https://github.com/Magisk-Modules-Repo/nano-ndk
 [submodule "adb-ndk"]
 	path = adb-ndk
-	url = https://github.com/ArieSR91/adb-ndk
+	url = https://github.com/Magisk-Modules-Repo/adb-ndk
 [submodule "busybox-ndk"]
         path = busybox-ndk
-	url = https://github.com/ArieSR91/busybox-ndk
+	url = https://github.com/Magisk-Modules-Repo/busybox-ndk
 [submodule "bash-ndk"]
         path = bash-ndk
-        url = https://github.com/ArieSR91/bash-ndk
+        url = https://github.com/Magisk-Modules-Repo/bash-ndk
