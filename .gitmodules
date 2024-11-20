@@ -4,3 +4,5 @@
 [submodule "adb-ndk"]
 	path = adb-ndk
 	url = https://github.com/ArieSR91/adb-ndk
+[submodule "busybox-ndk"]
+	url = https://github.com/ArieSR91/busybox-ndk
