@@ -1,0 +1,3 @@
+[submodule "nano-ndk"]
+	path = nano-ndk
+	url = https://github.com/ArieSR91/nano-ndk
