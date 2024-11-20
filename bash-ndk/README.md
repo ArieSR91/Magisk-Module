@@ -1,4 +1,4 @@
-# kali-bashrc
+# bash-ndk
 
 Bash shell for android
 

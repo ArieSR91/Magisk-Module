@@ -2,7 +2,7 @@
 #	Arie-SR91 <syahri.ramadhan2022@gmail.com>
 # This file is provided under the same terms as mksh.
 #-
-# Kali linux basrc for Android
+# Kali linux mkshrc for Android
 
 : ${TERM:=xterm-256color} ${MKSH:=/system/bin/sh} ${HOSTNAME:=$(hostname)}
 : ${SHELL:=$MKSH}

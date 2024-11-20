@@ -1,6 +1,6 @@
-id=terminalmods
-name=Kali bashrc
-version=v1.4.7
+id=bash-ndk
+name=Bash Shell
+version=5.2
 versionCode=146
 author=Arie-SR91
-description=Kali linux bashrc
+description=Bash shell for android
