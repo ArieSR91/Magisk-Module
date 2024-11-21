@@ -9,4 +9,4 @@
 	url = https://github.com/Magisk-Modules-Repo/busybox-ndk
 [submodule "bash-ndk"]
         path = bash-ndk
-        url = https://github.com/Magisk-Modules-Repo/bash-ndk
+        url = https://github.com/ArieSR91/bash-ndk
