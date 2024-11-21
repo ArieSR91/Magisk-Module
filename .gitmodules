@@ -11,4 +11,4 @@
         path = bash-ndk
         url = https://github.com/ArieSR91/bash-ndk
 [submodule "FPSUnlocker"]
-	url = https://github.com/Magisk-Modules-Repo/FPSUnlocker
+	url = https://github.com/ArieSR91/FPSUnlocker
