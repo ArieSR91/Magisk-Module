@@ -13,3 +13,6 @@
 [submodule "FPSUnlocker"]
 	url = https://github.com/ArieSR91/FPSUnlocker
 	path = FPSUnlocker
+[submodule "mtd-ndk"]
+	path = mtd-ndk
+	url = https://github.com/Magisk-Modules-Repo/mtd-ndk
