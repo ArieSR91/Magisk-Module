@@ -1,24 +1,66 @@
 #!/bin/bash
 
+CYAN="\033[1;36m"
+NC="\033[1;0m"
 CRDIR=$(pwd)
 MODIR="/sdcard/Magisk-Module/"
 
-ziping()
+build_all()
 {
-    cd $i
-    shopt -s extglob
-    filename=$(echo $i | sed 's:/*$::')
-    echo "Building $filename"
-    zip -qr $filename *
-    if [ ! -d $MODIR ]; then
-        mkdir $MODIR
-    fi
-    echo "Moving $filename to $MODIR"
-    mv $filename.zip $MODIR
-    cd $CRDIR
+    files=$(ls -d1 */)
+    for i in ${files[@]}; do
+        cd $i
+        shopt -s extglob
+        filename=$(echo $i | sed 's:/*$::')
+        echo -e "$CYAN[+] Building $filename$NC"
+        zip -qr $filename *
+        if [ ! -d $MODIR ]; then
+            mkdir $MODIR
+        fi
+        echo "Moving $filename.zip to $MODIR"
+        mv $filename.zip $MODIR
+        cd $CRDIR
+    done
 }
 
-files=$(ls -d1 */)
-for i in ${files[@]}; do
-    ziping
-done
+build_selected()
+{
+    files=$(ls -d1 */)
+    select choice in ${files[@]}; do
+        cd $choice
+        shopt -s extglob
+        filename=$(echo $choice | sed 's:/*$::')
+        echo -e "$CYAN[+] Building $filename$NC"
+        zip -qr $filename *
+        if [ ! -d $MODIR ]; then
+            mkdir $MODIR
+        fi
+        echo "Moving $filename.zip to $MODIR"
+        mv $filename.zip $MODIR
+        cd $CRDIR
+    done
+}
+show_help()
+{
+    echo -e "
+Usage: $0 [options]
+
+Options:
+         -a, --all, all              : build all
+         -s, --selected, selected    : build selected
+         -h, --help, help            : show help screen
+"
+}
+
+case $1 in
+    -a|--all|all)
+        build_all
+        ;;
+    -s|--selected|selected)
+        build_selected
+        ;;
+    -h|--help|help|*)
+        show_help
+        ;;
+esac
+
