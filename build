@@ -21,6 +21,8 @@ build_all()
         mv $filename.zip $MODIR
         cd $CRDIR
     done
+    unset $i
+    return 0
 }
 
 build_selected()
@@ -39,6 +41,7 @@ build_selected()
         mv $filename.zip $MODIR
         cd $CRDIR
     done
+    return 0
 }
 show_help()
 {

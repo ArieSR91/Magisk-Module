@@ -15,6 +15,8 @@ update_all()
         git pull
         cd $CRDIR
     done
+    unset $i
+    return 0
 }
 
 update_selected()
@@ -28,6 +30,7 @@ update_selected()
         git pull
         cd $CRDIR
     done
+    return 0
 }
 show_help()
 {
