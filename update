@@ -1,0 +1,41 @@
+#!/bin/bash
+
+CYAN="\033[1;36m"
+NC="\033[1;0m"
+CRDIR=$(pwd)
+
+update_all()
+{
+    files=$(ls -d1 */)
+    for i in ${files[@]}; do
+        cd $i
+        shopt -s extglob
+        filename=$(echo $i | sed 's:/*$::')
+        echo -e "$CYAN[+] Updating $filename$NC"
+        git pull
+        cd $CRDIR
+    done
+}
+
+update_selected()
+{
+    files=$(ls -d1 */)
+    select choice in ${files[@]}; do
+        cd $choice
+        shopt -s extglob
+        filename=$(echo $choice | sed 's:/*$::')
+        echo -e "$CYAN[+] Updating $filename$NC"
+        git pull
+        cd $CRDIR
+    done
+}
+
+
+case $1 in
+    all)
+        update_all
+        ;;
+    *)
+         update_selected
+         ;;
+esac
