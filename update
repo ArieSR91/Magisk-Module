@@ -29,13 +29,27 @@ update_selected()
         cd $CRDIR
     done
 }
+show_help()
+{
+    echo -e "
+Usage: $0 [options]
 
+Options:
+         -a, --all, all              : update all
+         -s, --selected, selected    : update selected
+         -h, --help, help            : show help screen
+"
+}
 
 case $1 in
-    all)
+    -a|--all|all)
         update_all
         ;;
-    *)
-         update_selected
-         ;;
+    -s|--selected|selected)
+        update_selected
+        ;;
+    -h|--help|help|*)
+        show_help
+        ;;
 esac
+
