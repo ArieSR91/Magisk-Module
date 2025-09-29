@@ -21,7 +21,7 @@ build_all()
         mv $filename.zip $MODIR
         cd $CRDIR
     done
-    unset $i
+    unset i
     return 0
 }
 

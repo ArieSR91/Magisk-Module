@@ -15,7 +15,7 @@ update_all()
         git pull
         cd $CRDIR
     done
-    unset $i
+    unset i
     return 0
 }
 
