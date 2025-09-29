@@ -16,3 +16,6 @@
 [submodule "mtd-ndk"]
 	path = mtd-ndk
 	url = https://github.com/Magisk-Modules-Repo/mtd-ndk
+[submodule "chroot-distro"]
+        path = chroot-distro
+        url = https://github.com/Magisk-Modules-Alt-Repo/chroot-distro
