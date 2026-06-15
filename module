@@ -1,6 +1,6 @@
 # add repo and path (make sure repo without https://github.com/)
+# you can use path if you want
 # exampe: Magisk-Modules-Repo/nano-ndk nano-android
-
 Magisk-Modules-Repo/nano-ndk
 Magisk-Modules-Repo/adb-ndk
 Magisk-Modules-Repo/busybox-ndk
