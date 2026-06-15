@@ -1,0 +1,16 @@
+#!/bin/bash
+
+if [ ! -f "module" ]; then
+    echo "Error: File 'module' not found!"
+    exit 1
+fi
+
+while read -r repo path || [ -n "$repo" ]; do
+    [[ -z "$repo" || "$repo" =~ ^# ]] && continue
+    if [ -z "$path" ]; then
+        git submodule add "https://github.com/$repo"
+    else
+        git submodule add "https://github.com/$repo" "$path"
+    fi
+done < module
+git submodule update --init --recursive

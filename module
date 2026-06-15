@@ -1,0 +1,10 @@
+# add repo and path (make sure repo without https://github.com/)
+# exampe: Magisk-Modules-Repo/nano-ndk nano-android
+
+Magisk-Modules-Repo/nano-ndk
+Magisk-Modules-Repo/adb-ndk
+Magisk-Modules-Repo/busybox-ndk
+ArieSR91/bash-ndk
+ArieSR91/FPSUnlocker
+Magisk-Modules-Repo/mtd-ndk
+Magisk-Modules-Alt-Repo/chroot-distro
